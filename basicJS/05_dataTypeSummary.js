@@ -11,8 +11,8 @@ let newSymbol = Symbol('123')
 let updatedSymbol= Symbol('123')
 let bigNumber = 12344567647553n
 
-console.log(typeof accountType, typeof initialAccountBalance);
-console.log(newSymbol === updatedSymbol); // false
+// console.log(typeof accountType, typeof initialAccountBalance);
+// console.log(newSymbol === updatedSymbol); // false
 
 
 // Non-Primative:- referance is going to copy
@@ -30,4 +30,30 @@ function Func()  {
 return 'Hello'
 }
 
-console.log(typeof Func);
+// console.log(typeof Func);
+
+// ***********************************************************************************************
+
+// Stack(Primitive) && Heap(non-primitive)
+
+let myEmail ='abc@gmail.com'
+
+let newEmail = myEmail
+
+newEmail= 'abhi@yahoo.com'
+
+console.log(myEmail) // abc@gmail.com
+console.log(newEmail)// abhi@yahoo.com
+
+// Non-Primitive
+
+let objOne = {
+    name: 'abhishek',
+    email: 'abhishek@gmail.com'
+}
+
+let objTwo = objOne
+
+objTwo.email= "anand@yahoo.com"
+console.log(objOne.email);// anand@yahoo.com
+console.log(objTwo.email); // anand@yahoo.com
