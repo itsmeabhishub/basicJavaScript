@@ -34,3 +34,29 @@ console.log(typeof newStr);
 console.log(newStr);
 
 // 33 => "33"
+
+let stringCon1 = 'Abhishek'
+
+let stringCon2 = 'Anand'
+
+console.log(stringCon1 + ' ' +stringCon2)// Abhishek Anand
+
+console.log('1' + 2) // 12
+console.log(1 + '2') // 12
+console.log('1' + 2 + 3) // 123
+console.log(1 + 2 + '3') // 33
+console.log(+true) // 1
+// console.log(true+) // 1
+console.log(+'') // 0
+// console.log(''+) // 0
+
+
+
+// prefix and postFix
+
+let x = 3
+let y = x++
+let z = ++y
+
+console.log(x,y,z)// 5,3,5
+console.log(x,y,z)// 4,4,4
