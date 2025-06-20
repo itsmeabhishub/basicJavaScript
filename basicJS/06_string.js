@@ -4,7 +4,7 @@ console.log(`Hi this is ${str} and i am a frontend ${role} at cognizant`)
 
 // use back strick method to concat the string
 
-const nameUpdate= new String('Abhishek    ')
+const nameUpdate= new String('Abhishek Anand Developer Cognizant')
 
 console.log(nameUpdate.at(3))//i
 console.log(nameUpdate.length)//8
@@ -21,3 +21,6 @@ console.log(nameUpdate.trim().padStart(16,'awe'))//aweaweawAbhishek
 console.log(nameUpdate.repeat(5))//Abhishek    Abhishek    Abhishek    Abhishek    Abhishek 
 console.log(nameUpdate.replace('Abhishek', 'shubham'))//shubham
 console.log(nameUpdate.valueOf())//Abhishek
+console.log(nameUpdate.split(' '));
+console.log(nameUpdate.slice(-9));
+
