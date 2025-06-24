@@ -29,3 +29,22 @@ function userNamePrint(username){
 
 const abc = userNamePrint('Abhi')
 console.log(abc)
+
+const obj = {
+    name:'Abhi',
+    domain: 'IoT'
+}
+
+function getObject(getObj){
+    console.log(`My ${Object.keys(getObj)[0]} is ${getObj.name} and my ${Object.keys(getObj)[1]} is ${getObj.domain}`)
+}
+getObject(obj)
+
+const array=[1,2,4,5]
+
+function getArray(getArr){
+    return getArr[3]
+}
+
+const abcd = getArray(array)
+console.log(abcd);
