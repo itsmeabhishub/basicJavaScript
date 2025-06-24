@@ -44,3 +44,17 @@ console.log(Object.entries(objTest3));
 console.log(Object.entries(objTest3).map(([key, value])=> ({key, value})));
 
 
+//object destructring
+
+const friendGroup ={
+    hero: 'Ankit',
+    hardworker: 'Piyush',
+    dman:'Abhay'
+}
+
+// const {hero,hardworker,dman} =friendGroup
+
+const {hardworker, ...rest} = friendGroup
+
+console.log(rest)
+
