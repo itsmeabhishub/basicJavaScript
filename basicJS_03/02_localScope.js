@@ -18,4 +18,4 @@
 var c = 30
 
 // able to get globally
-console.log(d)
+// console.log(d) //not able to get this
