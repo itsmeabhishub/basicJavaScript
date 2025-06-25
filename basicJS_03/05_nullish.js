@@ -12,3 +12,8 @@ if '' then ''
 if null or undefine then null
 */
 
+// const a= 5
+// a= 10
+
+// console.log(a) error because we cant change the constant once assign
+
