@@ -19,3 +19,31 @@ var c = 30
 
 // able to get globally
 // console.log(d) //not able to get this
+
+
+function outerCheck() {
+    const userName = 'Abhi'
+    function innerCheck (){
+        const webSite= " Github"
+        console.log(`${userName} ${webSite}`)
+    }
+    // console.log(Website)// this is out of scope not reachable for outer function
+    innerCheck()
+}
+outerCheck()
+
+
+console.log(one(4));
+function one(num1){
+    return num1+1
+}
+
+//  console.log(two(6)); // befor defening of function that is like experesion we cant get
+ const two = function(num1){
+    return num1+1
+ }
+
+ console.log(two(6))
+
+ 
+ 
