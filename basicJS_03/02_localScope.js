@@ -47,7 +47,7 @@ function one(num1){
 
  
  
- let a = 10
+//  let a = 10
 {
      var a = 10// illegal shadowing
     console.log(a)
