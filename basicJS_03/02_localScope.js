@@ -47,3 +47,15 @@ function one(num1){
 
  
  
+ let a = 10
+
+ function b(){
+     var a = 10// illegal shadowing
+    console.log(a)
+    // console.log(d)
+ }
+//  var a= 10
+ b()
+  var d =15
+  var d =15
+ 
