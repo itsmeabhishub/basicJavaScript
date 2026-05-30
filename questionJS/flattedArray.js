@@ -11,6 +11,7 @@ function flattenArray(arr){
   }
   
   return flarArr;
+return arr.flat(Infinity)
 }
 
 console.log(flattenArray([1,2,3,4,5,[33,44,55,[65,69,87]]]));
