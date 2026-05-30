@@ -1,7 +1,7 @@
 
 
 function sort(arr){
-    let newArr= []
+    
     for(i=0; i<= arr.length -1; i++){
         for(j=0; j<=arr.length -1 -i; j++){
             if(arr[j]>arr[j+1] ){
@@ -12,6 +12,8 @@ function sort(arr){
         }
     }
     return arr;
+
+    // return arr.sort()
 
 }
 
