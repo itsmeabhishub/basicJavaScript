@@ -1,7 +1,7 @@
 
-
+let flarArr=[]
 function flattenArray(arr){
-    let flarArr=[]
+    
   for(let i =0; i<= arr.length-1;i++){
     if(Array.isArray(arr[i])){
         flattenArray(arr[i])
@@ -9,6 +9,7 @@ function flattenArray(arr){
         flarArr.push(arr[i])
     }
   }
+  
   return flarArr;
 }
 
