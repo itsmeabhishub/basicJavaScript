@@ -3,7 +3,7 @@
 function primeNo(number){
     let count = 0
     for(let i = 2; i<= number; i++){
-        for (let j = 1; j<=number; j++){
+        for (let j = 1; j<=i; j++){
             if(i % j === 0){
                 count++;
             }
