@@ -11,3 +11,11 @@ function map(array){
 console.log(map([11,22,33,44]));
 
 
+function upperCase(str){
+    let char= str.map((val)=>{
+        return val[0].toUpperCase() + val.substring(1)
+    })
+    return char
+}
+
+console.log(upperCase(["aman", "ankit"]));
