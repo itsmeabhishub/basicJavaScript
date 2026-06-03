@@ -44,3 +44,13 @@ function evenOdd(val){
 }
 
 console.log(evenOdd([11,22,33,44]))
+
+function obj(object){
+    let num = object.map((value)=>{
+        return value.name
+    })
+    return num
+
+}
+
+console.log(obj([{name: 'Ankit'},{name: 'Ankit'}]));
