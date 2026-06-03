@@ -19,3 +19,28 @@ function upperCase(str){
 }
 
 console.log(upperCase(["aman", "ankit"]));
+
+
+function square(array){
+        let arr = array.map((value)=>{
+            return value * value
+        })
+
+        return arr
+}
+
+console.log(square([11,22,33,44]));
+
+function evenOdd(val){
+        let num = val.map((x)=>{
+            if(x%2===0){
+                return(`${x} is even number`);
+                
+            } else {
+                return(`${x} is odd number`);
+            }
+        })
+        return num
+}
+
+console.log(evenOdd([11,22,33,44]))
