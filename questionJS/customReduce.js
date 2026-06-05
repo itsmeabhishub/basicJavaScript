@@ -7,6 +7,6 @@ let ans= intialValue
 }
 
 const arr1=[1,2,3,4]
-const reduce= myReduce(arr1, (acc, red)=> acc+red,0)
+const reduce= myReduce(arr1, (acc, red)=> acc + red,0)
 
 console.log(reduce);
