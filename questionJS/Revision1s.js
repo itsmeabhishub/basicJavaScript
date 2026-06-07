@@ -24,3 +24,27 @@ debouncrer("Abh")
 debouncrer("Abhi")
 debouncrer("Abhis")
 debouncrer("Abhishek")
+
+
+
+function throtte(fn,delay){
+    let lastcall = 0;
+
+    return function(...arg){
+        now= Date.now()
+        if( now - lastcall >= delay){
+            lastcall = now;
+            fn.apply(this,arg)
+        }
+    }
+}
+
+function greety(query){
+    console.log("Query", query);
+}
+
+const throty= throtte(greety,2000)
+
+setInterval(() => {
+    throty('Abhishek')
+}, 200);
