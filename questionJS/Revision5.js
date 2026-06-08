@@ -12,10 +12,10 @@ const person={
     name:"Abhishek"
 }
 
-function greet(city, state){
-console.log(this.name, city, state);
+function greet(city, state, country){
+console.log(this.name, city, state, country);
 }
 
 const bind=customBind(greet,person,"Jamui")
 
-bind('bihar')
+bind('bihar',"India")
