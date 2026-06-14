@@ -1,29 +1,29 @@
 
-function greet(city,state){
-    console.log(this.name , city, state);
-    
+function greet(city, state) {
+    console.log(this.name, city, state);
+
 }
 
-const person1={
-    name:'Abhishek'
+const person1 = {
+    name: 'Abhishek'
 }
 
 greet.apply(person1, ["Jamui", "Bihar"])
 
 
-function myApply(fn,obj, arg=[]){
-         obj.temp = fn
+function myApply(fn, obj, arg = []) {
+    obj.temp = fn
 
-        const result= obj.temp(...arg)
+    const result = obj.temp(...arg)
 
-        delete obj.temp
+    delete obj.temp
 
-        return result
+    return result
 }
 
-function greet1( city, state){
+function greet1(city, state) {
     console.log(this.name, city, state);
-    
+
 }
 
-myApply(greet,person1,['Jamui', "bihar"])
+myApply(greet, person1, ['Jamui', "bihar"])
