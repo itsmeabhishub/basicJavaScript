@@ -1,9 +1,9 @@
 
 
-function capatialWord(str){
+function capatialWord(str) {
     let word = str.split(/\s+/)
-    for(let i = 0; i<word.length; i++){
-        word[i]=word[i][0].toUpperCase() + word[i].substring(1)
+    for (let i = 0; i < word.length; i++) {
+        word[i] = word[i][0].toUpperCase() + word[i].substring(1)
     }
     return word.join(" ")
 }
