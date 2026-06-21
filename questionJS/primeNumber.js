@@ -1,17 +1,17 @@
 
 
-function primeNo(int){
-    let count =0;
-    for (let i =1; i<=int; i++){
-        if(int % i === 0){
-                count ++;
+function primeNo(int) {
+    let count = 0;
+    for (let i = 1; i <= int; i++) {
+        if (int % i === 0) {
+            count++;
         }
     }
     console.log(count);
-    
-    if(count >2){
+
+    if (count > 2) {
         console.log('not prime number')
-    }else{
+    } else {
 
         console.log("prime number")
     }
