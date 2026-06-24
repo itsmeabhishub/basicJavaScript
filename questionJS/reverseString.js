@@ -1,14 +1,14 @@
 
 
-function revStr(str){
-    return(str.toString().split("").reverse().join())
+function revStr(str) {
+    return (str.toString().split("").reverse().join())
 }
 
 console.log(revStr('abhi'));
 
-function reverStringLoop(str){
+function reverStringLoop(str) {
     let res = ""
-    for(let i = str.length - 1; i>=0; i--){
+    for (let i = str.length - 1; i >= 0; i--) {
         res += str[i]
     }
     return res;
