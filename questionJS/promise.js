@@ -41,12 +41,12 @@ function promisePolyfill(f1) {
         }
         return this
     }
-try{
-f1(resolve, reject)
-}catch(err){
-    reject(err)
-}
-    
+    try {
+        f1(resolve, reject)
+    } catch (err) {
+        reject(err)
+    }
+
 
 }
 
