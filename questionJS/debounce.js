@@ -1,21 +1,21 @@
 
 
-function debounce(fn,delay){
+function debounce(fn, delay) {
     let timer;
 
-    return function(...args){
+    return function (...args) {
         clearTimeout(timer)
 
-        timer= setTimeout(()=>{
+        timer = setTimeout(() => {
             fn.apply(this, args)
         }, delay)
     }
 }
 
-function greet(name){
+function greet(name) {
     console.log(`Hello ${name}`)
 }
 
-const debounceGreet = debounce(greet,1000)
+const debounceGreet = debounce(greet, 1000)
 
 debounceGreet("Abhishek")
