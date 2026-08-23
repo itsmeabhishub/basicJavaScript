@@ -25,23 +25,23 @@ debo('Abbhishek')
 debo('Abhishek Anand')
 
 function throttlee(fn, delay) {
-let lastCall = 0;
+    let lastCall = 0;
 
-return function(...args){
-    now= Date.now()
-    if(now-lastCall >= delay ){
-        lastCall=now;
-        fn.apply(this,args)
+    return function (...args) {
+        now = Date.now()
+        if (now - lastCall >= delay) {
+            lastCall = now;
+            fn.apply(this, args)
+        }
     }
 }
+
+function greetT(message) {
+    console.log("Sending message", message);
+
 }
 
-function greetT(message){
-    console.log("Sending message" , message);
-    
-}
-
-const throt = throttlee(greetT,2000)
+const throt = throttlee(greetT, 2000)
 
 setInterval(() => {
     throt("Abhishek")
